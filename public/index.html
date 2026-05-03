@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tracey Sun — Architect & Designer. M.Arch Candidate, Columbia University GSAPP. Portfolio of architectural projects, research, and design." />
+  <title>Tracey Sun — Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-name">Tracey Sun</span>
+        <span class="nav__logo-rule"></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li>
+          <a href="https://issuu.com/traceysun" target="_blank" rel="noopener" class="nav__link nav__link--cta">
+            View Portfolio PDF
+          </a>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#work" class="mobile-menu__link">Work</a></li>
+      <li><a href="#about" class="mobile-menu__link">About</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+      <li><a href="https://issuu.com/traceysun" target="_blank" rel="noopener" class="mobile-menu__link">Portfolio PDF</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <!-- SVG architectural line drawing -->
+      <svg class="hero__lineart" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Grid / plan lines -->
+        <line x1="0" y1="350" x2="900" y2="350" stroke="currentColor" stroke-width="0.4" opacity="0.35"/>
+        <line x1="450" y1="0" x2="450" y2="700" stroke="currentColor" stroke-width="0.4" opacity="0.35"/>
+        <!-- Elevation outline — abstract building facade -->
+        <rect x="150" y="150" width="600" height="400" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.2"/>
+        <!-- Window grid -->
+        <line x1="250" y1="150" x2="250" y2="550" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <line x1="350" y1="150" x2="350" y2="550" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <line x1="450" y1="150" x2="450" y2="550" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <line x1="550" y1="150" x2="550" y2="550" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <line x1="650" y1="150" x2="650" y2="550" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <line x1="150" y1="250" x2="750" y2="250" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <line x1="150" y1="350" x2="750" y2="350" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <line x1="150" y1="450" x2="750" y2="450" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+        <!-- Highlighted windows -->
+        <rect x="260" y="260" width="80" height="80" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.3"/>
+        <rect x="360" y="160" width="80" height="80" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.3"/>
+        <rect x="460" y="360" width="80" height="80" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.3"/>
+        <rect x="560" y="260" width="80" height="80" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.3"/>
+        <rect x="360" y="460" width="80" height="80" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.3"/>
+        <!-- Diagonal cross hatch -->
+        <line x1="150" y1="150" x2="750" y2="550" stroke="currentColor" stroke-width="0.3" opacity="0.1"/>
+        <line x1="750" y1="150" x2="150" y2="550" stroke="currentColor" stroke-width="0.3" opacity="0.1"/>
+        <!-- Section cut indicator -->
+        <line x1="0" y1="100" x2="80" y2="100" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+        <circle cx="80" cy="100" r="4" fill="currentColor" opacity="0.5"/>
+        <text x="88" y="104" font-family="Inter, sans-serif" font-size="9" fill="currentColor" opacity="0.5">A</text>
+        <!-- Dimension lines -->
+        <line x1="150" y1="600" x2="750" y2="600" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+        <line x1="150" y1="595" x2="150" y2="605" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+        <line x1="750" y1="595" x2="750" y2="605" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+        <text x="440" y="618" font-family="Inter, sans-serif" font-size="8" fill="currentColor" opacity="0.25" text-anchor="middle">24 000</text>
+        <!-- North arrow -->
+        <line x1="840" y1="80" x2="840" y2="40" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+        <polygon points="840,30 834,48 840,44 846,48" fill="currentColor" opacity="0.4"/>
+        <text x="840" y="96" font-family="Inter, sans-serif" font-size="9" fill="currentColor" opacity="0.4" text-anchor="middle">N</text>
+        <!-- Scale bar -->
+        <line x1="820" y1="640" x2="880" y2="640" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+        <line x1="820" y1="635" x2="820" y2="645" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+        <line x1="850" y1="635" x2="850" y2="645" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+        <line x1="880" y1="635" x2="880" y2="645" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+        <text x="850" y="658" font-family="Inter, sans-serif" font-size="8" fill="currentColor" opacity="0.4" text-anchor="middle">1 : 200</text>
+      </svg>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        <span class="hero__eyebrow-line"></span>
+        M.Arch — Columbia University GSAPP
+      </p>
+      <h1 class="hero__name">Tracey<br/><em>Sun</em></h1>
+      <p class="hero__descriptor">Architecture &amp; Design</p>
+      <div class="hero__cta">
+        <a href="#work" class="btn btn--primary">View Work</a>
+        <a href="https://issuu.com/traceysun" target="_blank" rel="noopener" class="btn btn--ghost">Portfolio PDF</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span class="hero__scroll-label">Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="work" id="work">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-header__number">01</span>
+        <h2 class="section-header__title">Selected Work</h2>
+        <p class="section-header__sub">Architecture · Research · Installation</p>
+      </header>
+
+      <div class="work__filter" id="workFilter">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Housing">Housing</button>
+        <button class="filter-btn" data-filter="Cultural Institution">Cultural</button>
+        <button class="filter-btn" data-filter="Urban Design">Urban</button>
+        <button class="filter-btn" data-filter="Research / Speculative">Research</button>
+        <button class="filter-btn" data-filter="Installation">Installation</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__left">
+          <header class="section-header section-header--left">
+            <span class="section-header__number">02</span>
+            <h2 class="section-header__title">About</h2>
+          </header>
+          <!-- SVG portrait placeholder with line art feel -->
+          <div class="about__portrait">
+            <svg viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Portrait illustration">
+              <!-- Background grid -->
+              <rect width="300" height="380" fill="none" stroke="var(--color-border)" stroke-width="1"/>
+              <line x1="0" y1="95" x2="300" y2="95" stroke="var(--color-border)" stroke-width="0.5"/>
+              <line x1="0" y1="190" x2="300" y2="190" stroke="var(--color-border)" stroke-width="0.5"/>
+              <line x1="0" y1="285" x2="300" y2="285" stroke="var(--color-border)" stroke-width="0.5"/>
+              <line x1="75" y1="0" x2="75" y2="380" stroke="var(--color-border)" stroke-width="0.5"/>
+              <line x1="150" y1="0" x2="150" y2="380" stroke="var(--color-border)" stroke-width="0.5"/>
+              <line x1="225" y1="0" x2="225" y2="380" stroke="var(--color-border)" stroke-width="0.5"/>
+              <!-- Abstract figure -->
+              <ellipse cx="150" cy="110" rx="52" ry="62" stroke="var(--color-ink)" stroke-width="1.2" fill="none"/>
+              <line x1="150" y1="172" x2="150" y2="290" stroke="var(--color-ink)" stroke-width="1.2"/>
+              <line x1="150" y1="200" x2="100" y2="250" stroke="var(--color-ink)" stroke-width="1.2"/>
+              <line x1="150" y1="200" x2="200" y2="250" stroke="var(--color-ink)" stroke-width="1.2"/>
+              <line x1="150" y1="290" x2="115" y2="360" stroke="var(--color-ink)" stroke-width="1.2"/>
+              <line x1="150" y1="290" x2="185" y2="360" stroke="var(--color-ink)" stroke-width="1.2"/>
+              <!-- Detail lines on face -->
+              <line x1="132" y1="100" x2="142" y2="100" stroke="var(--color-ink)" stroke-width="0.8"/>
+              <line x1="158" y1="100" x2="168" y2="100" stroke="var(--color-ink)" stroke-width="0.8"/>
+              <path d="M 138 122 Q 150 130 162 122" stroke="var(--color-ink)" stroke-width="0.8" fill="none"/>
+              <!-- Annotation -->
+              <line x1="210" y1="110" x2="240" y2="90" stroke="var(--color-border)" stroke-width="0.6"/>
+              <text x="242" y="88" font-family="Inter" font-size="7" fill="var(--color-muted)">T.S.</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="about__right">
+          <p class="about__bio" id="aboutBio">
+            I am a Masters of Architecture candidate at Columbia University's Graduate School of Architecture, Planning and Preservation. My work explores the intersection of structure, materiality, and lived experience — using line, light, and space as primary instruments of design.
+          </p>
+          <p class="about__bio about__bio--secondary" id="aboutBio2">
+            Drawing from both computational and hand-drafted traditions, I pursue architecture that is precise yet humane, rigorous yet poetic. My portfolio spans urban housing, cultural institutions, and speculative research into the future of the built environment.
+          </p>
+
+          <div class="about__details">
+            <div class="about__detail-item">
+              <span class="about__detail-label">Education</span>
+              <span class="about__detail-value">M.Arch, Columbia University GSAPP</span>
+            </div>
+            <div class="about__detail-item">
+              <span class="about__detail-label">Location</span>
+              <span class="about__detail-value">New York City</span>
+            </div>
+            <div class="about__detail-item">
+              <span class="about__detail-label">Focus</span>
+              <span class="about__detail-value">Architecture, Urban Design, Research</span>
+            </div>
+          </div>
+
+          <div class="about__links">
+            <a href="https://issuu.com/traceysun" target="_blank" rel="noopener" class="about__link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Issuu Portfolio
+            </a>
+            <a href="#contact" class="about__link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <header class="section-header section-header--left">
+          <span class="section-header__number">03</span>
+          <h2 class="section-header__title">Contact</h2>
+        </header>
+
+        <div class="contact__content">
+          <p class="contact__intro">
+            Open to collaborations, commissions, and conversations about architecture and design.
+          </p>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Project inquiry, collaboration, etc." />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project or inquiry…" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contact__aside">
+          <div class="contact__info-block">
+            <p class="contact__info-label">Email</p>
+            <a href="mailto:tracey@traceylineart.com" class="contact__info-value">tracey@traceylineart.com</a>
+          </div>
+          <div class="contact__info-block">
+            <p class="contact__info-label">Portfolio</p>
+            <a href="https://issuu.com/traceysun" target="_blank" rel="noopener" class="contact__info-value">issuu.com/traceysun</a>
+          </div>
+          <div class="contact__info-block">
+            <p class="contact__info-label">Based In</p>
+            <span class="contact__info-value">New York City</span>
+          </div>
+
+          <!-- Small SVG line decoration -->
+          <svg class="contact__deco" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="100" cy="100" r="80" stroke="var(--color-border)" stroke-width="0.8"/>
+            <circle cx="100" cy="100" r="55" stroke="var(--color-border)" stroke-width="0.5"/>
+            <circle cx="100" cy="100" r="30" stroke="var(--color-border)" stroke-width="0.5"/>
+            <line x1="20" y1="100" x2="180" y2="100" stroke="var(--color-border)" stroke-width="0.5"/>
+            <line x1="100" y1="20" x2="100" y2="180" stroke="var(--color-border)" stroke-width="0.5"/>
+            <line x1="43" y1="43" x2="157" y2="157" stroke="var(--color-border)" stroke-width="0.4"/>
+            <line x1="157" y1="43" x2="43" y2="157" stroke="var(--color-border)" stroke-width="0.4"/>
+            <circle cx="100" cy="100" r="4" fill="var(--color-ink)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__name">Tracey Sun</p>
+        <p class="footer__copy">&copy; <span id="footerYear">2026</span> — All rights reserved</p>
+        <div class="footer__links">
+          <a href="https://issuu.com/traceysun" target="_blank" rel="noopener" class="footer__link">Issuu</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__panel">
+      <button class="modal__close" id="modalClose" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
