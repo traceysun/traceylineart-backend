@@ -164,7 +164,7 @@ const projectArtwork = {
 // --- Fetch and render projects ---
 async function loadPortfolio() {
   try {
-    const res = await fetch('/api/portfolio');
+    const res = await fetch('/data/portfolio.json');
     const data = await res.json();
     renderProjects(data.projects);
     renderAbout(data.about);

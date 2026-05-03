@@ -1,0 +1,82 @@
+{
+  "about": {
+    "name": "Tracey Sun",
+    "title": "Architect & Designer",
+    "subtitle": "M.Arch Candidate, Columbia University GSAPP",
+    "location": "New York City",
+    "bio": "I am a Masters of Architecture candidate at Columbia University's Graduate School of Architecture, Planning and Preservation. My work explores the intersection of structure, materiality, and lived experience — using line, light, and space as primary instruments of design.",
+    "bio2": "Drawing from both computational and hand-drafted traditions, I pursue architecture that is precise yet humane, rigorous yet poetic. My portfolio spans urban housing, cultural institutions, and speculative research into the future of the built environment.",
+    "email": "tracey@traceylineart.com",
+    "instagram": "https://www.instagram.com/traceylineart",
+    "issuu": "https://issuu.com/traceysun",
+    "cv": "#"
+  },
+  "projects": [
+    {
+      "id": "threshold",
+      "number": "01",
+      "title": "Threshold",
+      "category": "Housing",
+      "year": "2025",
+      "location": "Harlem, New York",
+      "description": "An adaptive reuse and infill housing project in Harlem that rethinks the threshold between public street and private dwelling. The project introduces a series of transitional spaces — stoops, light courts, and shared gardens — that mediate between urban density and domestic intimacy.",
+      "tags": ["Housing", "Adaptive Reuse", "Urban"],
+      "featured": true
+    },
+    {
+      "id": "strata",
+      "number": "02",
+      "title": "Strata",
+      "category": "Cultural Institution",
+      "year": "2024",
+      "location": "Hudson Valley, New York",
+      "description": "A geology museum embedded into a hillside along the Hudson River. The building is organized around a continuous sectional cut that reveals geological layers, making the ground itself the primary exhibit. Concrete, glass, and corten steel trace the stratigraphy of the site.",
+      "tags": ["Museum", "Landscape", "Section"],
+      "featured": true
+    },
+    {
+      "id": "lattice",
+      "number": "03",
+      "title": "Lattice",
+      "category": "Research / Speculative",
+      "year": "2024",
+      "location": "Columbia GSAPP",
+      "description": "A computational study of structural lattice systems derived from crystallographic geometry. The research investigates how non-repeating tiling patterns — Penrose and Ammann–Beenker — can generate structurally efficient and spatially rich enclosures for large-span public buildings.",
+      "tags": ["Computation", "Structure", "Research"],
+      "featured": false
+    },
+    {
+      "id": "fold",
+      "number": "04",
+      "title": "Fold",
+      "category": "Installation",
+      "year": "2023",
+      "location": "New York City",
+      "description": "A site-specific paper installation exploring the structural logic of origami at architectural scale. Folded Kraft paper panels span a 12-meter bay, achieving rigidity through geometry alone. The work questions how material intelligence embedded in folding can inform tectonic thinking.",
+      "tags": ["Installation", "Material", "Tectonic"],
+      "featured": false
+    },
+    {
+      "id": "commons",
+      "number": "05",
+      "title": "Commons",
+      "category": "Urban Design",
+      "year": "2023",
+      "location": "Brooklyn, New York",
+      "description": "A proposal for a new civic commons in Brownsville, Brooklyn, anchored by a community library, a market hall, and a series of flexible outdoor rooms. The design draws on the morphology of the historic New York street grid while reinterpreting it for contemporary community life.",
+      "tags": ["Urban Design", "Civic", "Public Space"],
+      "featured": true
+    },
+    {
+      "id": "grain",
+      "number": "06",
+      "title": "Grain",
+      "category": "Furniture / Object",
+      "year": "2022",
+      "location": "Columbia GSAPP",
+      "description": "A series of hand-crafted furniture objects exploring the expressive potential of wood grain. Each piece is designed to expose and celebrate the natural patterning of the material — knots, rays, and annual rings — as primary ornament. Joinery is left visible as structural honesty.",
+      "tags": ["Craft", "Material", "Furniture"],
+      "featured": false
+    }
+  ]
+}
