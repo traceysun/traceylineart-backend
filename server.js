@@ -15,10 +15,14 @@ app.use(compression());
 app.use(cors());
 app.use(express.json());
 
-// Serve uploaded photos
+// Uploaded photos
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-// Serve the CrossPaths SPA and portfolio static files
-app.use(express.static(path.join(__dirname, 'public')));
+
+// CrossPaths API
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api', require('./routes/users'));
+app.use('/api/photos', require('./routes/photos'));
+app.use('/api/paths', require('./routes/paths'));
 
 // Portfolio API (legacy)
 const portfolioData = require('./data/portfolio.json');
@@ -31,20 +35,21 @@ app.get('/api/projects/:id', (req, res) => {
 });
 app.get('/api/about', (req, res) => res.json(portfolioData.about));
 
-// CrossPaths API
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api', require('./routes/users'));
-app.use('/api/photos', require('./routes/photos'));
-app.use('/api/paths', require('./routes/paths'));
+// HTML routes — must come before express.static so it can't intercept /app (a real directory)
+const CROSSPATHS = path.join(__dirname, 'public', 'app', 'index.html');
+const PORTFOLIO  = path.join(__dirname, 'public', 'index.html');
 
-// SPA: CrossPaths app at /app/*
-app.get('/app', (req, res) => res.sendFile(path.join(__dirname, 'public', 'app', 'index.html')));
-app.get('/app/*', (req, res) => res.sendFile(path.join(__dirname, 'public', 'app', 'index.html')));
+app.get('/',        (req, res) => res.sendFile(CROSSPATHS));
+app.get('/app',     (req, res) => res.sendFile(CROSSPATHS));
+app.get('/app/*',   (req, res) => res.sendFile(CROSSPATHS));
+app.get('/portfolio', (req, res) => res.sendFile(PORTFOLIO));
 
-// Portfolio catch-all
-app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
+// Static assets (CSS, JS, images, etc.)
+app.use(express.static(path.join(__dirname, 'public'), { index: false }));
+
+// Fallback — serve CrossPaths for any unknown route
+app.get('*', (req, res) => res.sendFile(CROSSPATHS));
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`CrossPaths app: http://localhost:${PORT}/app`);
 });
